@@ -1,11 +1,13 @@
 {
   "name": "plsplspls.work",
   "packageManager": "yarn@4.5.2",
+  "engines": {
+    "node": ">= 23.0.0"
+  },
   "scripts": {
-    "build": "hugo",
+    "build": "hugo --gc --minify",
     "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture",
-    "start": "hugo server",
-    "hugo": "hugo"
+    "start": "hugo server"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
