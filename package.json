@@ -1,0 +1,17 @@
+{
+  "name": "plsplspls.work",
+  "packageManager": "yarn@4.5.2",
+  "scripts": {
+    "build": "hugo",
+    "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture",
+    "start": "hugo server",
+    "hugo": "hugo"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "hugo-extended": "^0.139.4",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "wrangler": "^3.95.0"
+  }
+}
